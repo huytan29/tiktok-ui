@@ -1,2 +1,2 @@
 import PropTypes from "prop-types";
-import className from 'classNames/bind';
+import classNames from "classnames/bind";
