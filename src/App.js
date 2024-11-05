@@ -6,8 +6,9 @@ function App() {
       <Router>
         <div className="App">
           <Routes>
-            { publicRoutes.map(route => {
-              return <Route />
+            { publicRoutes.map((route, index) => {
+              const Page = route.component
+              return <Route key={index} path={route.path} element={<Page />} />
             })}
           </Routes>
         </div>
