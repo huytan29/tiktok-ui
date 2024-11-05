@@ -1,10 +1,17 @@
-
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { publicRoutes } from './routes';
 
 function App() {
   return (
-      <div className="App">
-        <h1>React App</h1>
-      </div>
+      <Router>
+        <div className="App">
+          <Routes>
+            { publicRoutes.map(route => {
+              return <Route />
+            })}
+          </Routes>
+        </div>
+      </Router>
   );
 }
 
