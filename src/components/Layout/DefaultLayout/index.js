@@ -1,13 +1,13 @@
 import Header from './Header'
 import Sidebar from './Sidebar'
 
-function DefaultLayout() {
+function DefaultLayout({children}) {
     return (
         <div>
             <Header />
             <div className='container'>
                 <Sidebar />
-                <div className='content'></div>
+                <div className='content'>{children}</div>
             </div>
         </div>
     )
